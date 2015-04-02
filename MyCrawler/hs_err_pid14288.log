@@ -1,0 +1,174 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+# java.lang.OutOfMemoryError: Cannot create GC thread. Out of system resources.
+#
+#  Internal Error (gcTaskThread.cpp:38), pid=14288, tid=47180965304640
+#  Error: Cannot create GC thread. Out of system resources.
+#
+# JRE version: 6.0_14-b08
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (14.0-b16 mixed mode linux-amd64 )
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000005e9fc800):  JavaThread "Unknown thread" [_thread_in_vm, id=14290, stack(0x00002ae92c9d5000,0x00002ae92cad6000)]
+
+Stack: [0x00002ae92c9d5000,0x00002ae92cad6000],  sp=0x00002ae92cad49f0,  free space=1022k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x6bcdaf]
+V  [libjvm.so+0x2be418]
+V  [libjvm.so+0x33a06d]
+V  [libjvm.so+0x338bae]
+V  [libjvm.so+0x338943]
+V  [libjvm.so+0x5a8327]
+V  [libjvm.so+0x697255]
+V  [libjvm.so+0x696eea]
+V  [libjvm.so+0x377a20]
+V  [libjvm.so+0x67f16f]
+V  [libjvm.so+0x3dec80]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000005e9fc800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=14290, stack(0x00002ae92c9d5000,0x00002ae92cad6000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+40000000-40009000 r-xp 00000000 00:16 6454                               /usr/csshare/pkgs/jdk1.6.0_14_x86_64/bin/java.real
+40108000-4010a000 rwxp 00008000 00:16 6454                               /usr/csshare/pkgs/jdk1.6.0_14_x86_64/bin/java.real
+5e9f4000-5ea15000 rwxp 5e9f4000 00:00 0                                  [heap]
+3b32600000-3b3261c000 r-xp 00000000 09:00 41618922                       /lib64/ld-2.5.so
+3b3281c000-3b3281d000 r-xp 0001c000 09:00 41618922                       /lib64/ld-2.5.so
+3b3281d000-3b3281e000 rwxp 0001d000 09:00 41618922                       /lib64/ld-2.5.so
+3b32a00000-3b32b4f000 r-xp 00000000 09:00 41618923                       /lib64/libc-2.5.so
+3b32b4f000-3b32d4f000 ---p 0014f000 09:00 41618923                       /lib64/libc-2.5.so
+3b32d4f000-3b32d53000 r-xp 0014f000 09:00 41618923                       /lib64/libc-2.5.so
+3b32d53000-3b32d54000 rwxp 00153000 09:00 41618923                       /lib64/libc-2.5.so
+3b32d54000-3b32d59000 rwxp 3b32d54000 00:00 0 
+3b32e00000-3b32e82000 r-xp 00000000 09:00 41618926                       /lib64/libm-2.5.so
+3b32e82000-3b33081000 ---p 00082000 09:00 41618926                       /lib64/libm-2.5.so
+3b33081000-3b33082000 r-xp 00081000 09:00 41618926                       /lib64/libm-2.5.so
+3b33082000-3b33083000 rwxp 00082000 09:00 41618926                       /lib64/libm-2.5.so
+3b33200000-3b33202000 r-xp 00000000 09:00 41618927                       /lib64/libdl-2.5.so
+3b33202000-3b33402000 ---p 00002000 09:00 41618927                       /lib64/libdl-2.5.so
+3b33402000-3b33403000 r-xp 00002000 09:00 41618927                       /lib64/libdl-2.5.so
+3b33403000-3b33404000 rwxp 00003000 09:00 41618927                       /lib64/libdl-2.5.so
+3b33a00000-3b33a16000 r-xp 00000000 09:00 41618937                       /lib64/libpthread-2.5.so
+3b33a16000-3b33c16000 ---p 00016000 09:00 41618937                       /lib64/libpthread-2.5.so
+3b33c16000-3b33c17000 r-xp 00016000 09:00 41618937                       /lib64/libpthread-2.5.so
+3b33c17000-3b33c18000 rwxp 00017000 09:00 41618937                       /lib64/libpthread-2.5.so
+3b33c18000-3b33c1c000 rwxp 3b33c18000 00:00 0 
+3b37200000-3b37207000 r-xp 00000000 09:00 41618938                       /lib64/librt-2.5.so
+3b37207000-3b37407000 ---p 00007000 09:00 41618938                       /lib64/librt-2.5.so
+3b37407000-3b37408000 r-xp 00007000 09:00 41618938                       /lib64/librt-2.5.so
+3b37408000-3b37409000 rwxp 00008000 09:00 41618938                       /lib64/librt-2.5.so
+3b3c800000-3b3c815000 r-xp 00000000 09:00 41618948                       /lib64/libnsl-2.5.so
+3b3c815000-3b3ca14000 ---p 00015000 09:00 41618948                       /lib64/libnsl-2.5.so
+3b3ca14000-3b3ca15000 r-xp 00014000 09:00 41618948                       /lib64/libnsl-2.5.so
+3b3ca15000-3b3ca16000 rwxp 00015000 09:00 41618948                       /lib64/libnsl-2.5.so
+3b3ca16000-3b3ca18000 rwxp 3b3ca16000 00:00 0 
+2ae92be82000-2ae92be84000 rwxp 2ae92be82000 00:00 0 
+2ae92beb5000-2ae92bebc000 r-xp 00000000 00:16 1388688                    /usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/lib/amd64/jli/libjli.so
+2ae92bebc000-2ae92bfbd000 ---p 00007000 00:16 1388688                    /usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/lib/amd64/jli/libjli.so
+2ae92bfbd000-2ae92bfbf000 rwxp 00008000 00:16 1388688                    /usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/lib/amd64/jli/libjli.so
+2ae92bfbf000-2ae92bfc2000 rwxp 2ae92bfbf000 00:00 0 
+2ae92bfc2000-2ae92c720000 r-xp 00000000 00:16 837432                     /usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/lib/amd64/server/libjvm.so
+2ae92c720000-2ae92c81f000 ---p 0075e000 00:16 837432                     /usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/lib/amd64/server/libjvm.so
+2ae92c81f000-2ae92c997000 rwxp 0075d000 00:16 837432                     /usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/lib/amd64/server/libjvm.so
+2ae92c997000-2ae92c9d5000 rwxp 2ae92c997000 00:00 0 
+2ae92c9d5000-2ae92c9d8000 ---p 2ae92c9d5000 00:00 0 
+2ae92c9d8000-2ae92cad6000 rwxp 2ae92c9d8000 00:00 0 
+2ae92cad6000-2ae92cae3000 r-xp 00000000 00:16 875593                     /usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/lib/amd64/libverify.so
+2ae92cae3000-2ae92cbe2000 ---p 0000d000 00:16 875593                     /usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/lib/amd64/libverify.so
+2ae92cbe2000-2ae92cbe5000 rwxp 0000c000 00:16 875593                     /usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/lib/amd64/libverify.so
+2ae92cbe5000-2ae92cc0e000 r-xp 00000000 00:16 1212136                    /usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/lib/amd64/libjava.so
+2ae92cc0e000-2ae92cd0d000 ---p 00029000 00:16 1212136                    /usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/lib/amd64/libjava.so
+2ae92cd0d000-2ae92cd14000 rwxp 00028000 00:16 1212136                    /usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/lib/amd64/libjava.so
+2ae92cd14000-2ae92cd15000 r-xp 2ae92cd14000 00:00 0 
+2ae92cd15000-2ae92cd16000 rwxp 2ae92cd15000 00:00 0 
+2ae92cd16000-2ae92cd1d000 r-xp 00000000 00:16 37764                      /usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/lib/amd64/native_threads/libhpi.so
+2ae92cd1d000-2ae92ce1e000 ---p 00007000 00:16 37764                      /usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/lib/amd64/native_threads/libhpi.so
+2ae92ce1e000-2ae92ce20000 rwxp 00008000 00:16 37764                      /usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/lib/amd64/native_threads/libhpi.so
+2ae92ce20000-2ae92ce21000 rwxp 2ae92ce20000 00:00 0 
+2ae92ce21000-2ae92ce29000 rwxs 00000000 09:00 38054134                   /tmp/hsperfdata_ccurt002/14288
+2ae92ce52000-2ae92ce5c000 r-xp 00000000 09:00 41617631                   /lib64/libnss_files-2.5.so
+2ae92ce5c000-2ae92d05b000 ---p 0000a000 09:00 41617631                   /lib64/libnss_files-2.5.so
+2ae92d05b000-2ae92d05c000 r-xp 00009000 09:00 41617631                   /lib64/libnss_files-2.5.so
+2ae92d05c000-2ae92d05d000 rwxp 0000a000 09:00 41617631                   /lib64/libnss_files-2.5.so
+2ae92d05d000-2ae92d067000 r-xp 00000000 09:00 41615388                   /lib64/libnss_nis-2.5.so
+2ae92d067000-2ae92d266000 ---p 0000a000 09:00 41615388                   /lib64/libnss_nis-2.5.so
+2ae92d266000-2ae92d267000 r-xp 00009000 09:00 41615388                   /lib64/libnss_nis-2.5.so
+2ae92d267000-2ae92d268000 rwxp 0000a000 09:00 41615388                   /lib64/libnss_nis-2.5.so
+2ae92d268000-2ae92d276000 r-xp 00000000 00:16 875594                     /usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/lib/amd64/libzip.so
+2ae92d276000-2ae92d378000 ---p 0000e000 00:16 875594                     /usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/lib/amd64/libzip.so
+2ae92d378000-2ae92d37b000 rwxp 00010000 00:16 875594                     /usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/lib/amd64/libzip.so
+2ae92d37b000-2ae92d5ec000 rwxp 2ae92d37b000 00:00 0 
+2ae92d5ec000-2ae93037c000 rwxp 2ae92d5ec000 00:00 0 
+2ae93037c000-2ae930386000 rwxp 2ae93037c000 00:00 0 
+2ae930386000-2ae93043c000 rwxp 2ae930386000 00:00 0 
+2ae930440000-2ae931900000 rwxp 2ae930440000 00:00 0 
+2ae931900000-2ae935840000 rwxp 2ae931900000 00:00 0 
+2ae935840000-2ae94584b000 rwxp 2ae935840000 00:00 0 
+2ae94584b000-2ae94586a000 rwxp 2ae94584b000 00:00 0 
+2ae94586a000-2ae94594c000 rwxp 2ae94586a000 00:00 0 
+2ae94594c000-2ae94596b000 rwxp 2ae94594c000 00:00 0 
+2ae94596b000-2ae94596c000 ---p 2ae94596b000 00:00 0 
+2ae94596c000-2ae945a6c000 rwxp 2ae94596c000 00:00 0 
+7fff50cc3000-7fff50cd8000 rwxp 7ffffffe9000 00:00 0                      [stack]
+7fff50dfd000-7fff50e00000 r-xp 7fff50dfd000 00:00 0                      [vdso]
+ffffffffff600000-ffffffffffe00000 ---p 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Xmx256m -Xms256m -Dfile.encoding=UTF-8 
+java_command: crawler foo.txt 100 456 htmlFiles
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/usr/csshare/pkgs/jdk1.6.0_14_x86_64:/usr/csshare/pkgs/firefox-10.0.2:/class/classes/ccurt002/bin:/usr/csshare/bin:/usr/csshare/sbin:/usr/bin/:/bin:/usr/local/bin:/usr/ucb:/sbin:/usr/sbin:/usr/local/sbin:/usr/bin/X11:/usr/X11R6/bin:/usr/local/X11:/usr/local/bin/X11:/usr/openwin/bin:.
+LD_LIBRARY_PATH=/usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/lib/amd64/server:/usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/lib/amd64:/usr/csshare/pkgs/jdk1.6.0_14_x86_64/jre/../lib/amd64:/usr/csshare/pkgs/firefox-10.0.2
+SHELL=/bin/bash
+DISPLAY=:1062.0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x6bd980], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x6bd980], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x594cc0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: [libjvm.so+0x594cc0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGXFSZ: [libjvm.so+0x594cc0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x594cc0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x597480], sa_mask[0]=0x00000004, sa_flags=0x10000004
+SIGHUP: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGINT: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGTERM: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGQUIT: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+
+
+---------------  S Y S T E M  ---------------
+
+OS:CentOS release 5.9 (Final)
+
+uname:Linux 2.6.18-348.3.1.el5 #1 SMP Mon Mar 11 19:39:25 EDT 2013 x86_64
+libc:glibc 2.5 NPTL 2.5 
+rlimit: STACK 10240k, CORE 0k, NPROC 150, NOFILE 800, AS 40000000k
+load average:2.02 1.93 1.55
+
+CPU:total 48 (12 cores per cpu, 1 threads per core) family 16 model 9 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, mmxext, 3dnow, 3dnowext, sse4a
+
+Memory: 4k page, physical 264285332k(234073272k free), swap 23438072k(23438072k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (14.0-b16) for linux-amd64 JRE (1.6.0_14-b08), built on May 21 2009 01:11:11 by "java_re" with gcc 3.2.2 (SuSE Linux)
+
+time: Tue Apr 30 22:25:11 2013
+elapsed time: 0 seconds
+
