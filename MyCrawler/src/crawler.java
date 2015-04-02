@@ -116,6 +116,7 @@ public class crawler {
 		String out = args[3];
 
 		File input = new File (seed);
+		input.createNewFile();
 		if(!input.canRead()) //Check that file exists and can be opened
 			perr("Could not open " + seed);
 

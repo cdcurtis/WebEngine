@@ -1,0 +1,10 @@
+http://www.ucr.edu/ -> file0.dld
+http://www.ucr.edu/#main -> file1.dld
+http://www.ucr.edu/athletics/ -> file2.dld
+http://www.ucr.edu/academics/ -> file3.dld
+http://admissions.ucr.edu/VisitUCR/virtualTours -> file4.dld
+http://www.ucr.edu/friends/ -> file5.dld
+http://www.ucr.edu/resources/ -> file6.dld
+http://www.ucr.edu/staff/ -> file7.dld
+http://www.ucr.edu/alumni/ -> file8.dld
+http://www.ucr.edu/alpha.html -> file9.dld

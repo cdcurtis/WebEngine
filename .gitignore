@@ -1,0 +1,8 @@
+.metadata
+**/bin/
+*/output/
+*.class
+*.dld
+
+
+*.class
