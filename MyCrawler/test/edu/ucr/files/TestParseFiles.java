@@ -16,7 +16,7 @@ public class TestParseFiles {
 	
 	@Test
 	public void testReadFileAsXML() {
-		parseFiles.readFile("outputTest/file0.dld");
+		parseFiles.readFile("testInput/file0.dld");
 	}
 
 }
