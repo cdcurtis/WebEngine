@@ -39,7 +39,8 @@ public class crawler {
 			Document doc = Jsoup.connect(url).get();
 
 			Elements links = doc.select("a[href]");
-			System.out.println(url + "\nLinks: " + links.size() + "\tHops: " + n.hops + "\n");
+			//System.out.println(url + "\nLinks: " + links.size() + "\tHops: " + n.hops + "\n");
+			//System.out.println("fileNo = " + fileno);
 
 			for (Element link : links) {
 				try {//things we dont want to pick up
@@ -72,14 +73,17 @@ public class crawler {
 			}
 		}
 		catch(MalformedURLException e){
-			System.out.println("Caught bad URL at"+ url+" " + e);
-			e.printStackTrace();
+			//System.out.println("Caught bad URL at"+ url+" " + e);
+			//e.printStackTrace();
 		
 		} 
 		catch (IOException e) {
-			System.out.println("Caught exception on"+ url+" " + e);
-			e.printStackTrace();
+			//System.out.println("Caught exception on"+ url+" " + e);
+			//e.printStackTrace();
 			
+		}
+		catch (IllegalArgumentException e) {
+			//e.printStackTrace();
 		}
 		
 
@@ -160,7 +164,7 @@ public class crawler {
 									String newFile= downloadFile(readURL, q, outDir, pageMax);
 
 									if( newFile == null )
-										break;
+										continue;
 
 									output.write(readURL.link + " -> " + newFile + "\n");
 									//	 output.write(readURL.link + " -> " + newFile + "\tThread#" + tNum + "\n"); //Debugging version
@@ -169,6 +173,8 @@ public class crawler {
 								}
 							}
 						}
+						//System.out.println("Queue.size() = " + q.size());
+						
 					}
 				} catch (FileNotFoundException e) {
 					System.out.println("File "+ " Not Found!");
